@@ -1,0 +1,201 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_itemIndex",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_step",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_itemAddress",
+						"type": "address"
+					}
+				],
+				"name": "SupplyChainStep",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "_owner",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_identifier",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_itemPrice",
+						"type": "uint256"
+					}
+				],
+				"name": "createItem",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isOwner",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "itemIndex",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "items",
+				"outputs": [
+					{
+						"internalType": "contract Item",
+						"name": "_item",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_identifier",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_itemPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum ItemManager.SupplyChainState",
+						"name": "_state",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_itemIndex",
+						"type": "uint256"
+					}
+				],
+				"name": "triggerDelivery",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_itemIndex",
+						"type": "uint256"
+					}
+				],
+				"name": "triggerPayment",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ItemManager.sol": "ItemManager"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Item.sol": {
+			"keccak256": "0x7709a1ca7331c1aa6e0506d0535ee21810b6dd59931a6da9d1ec6103a3cba9d5",
+			"urls": [
+				"bzz-raw://37632ef38ec34653dd6f92b6d9dd87006f95b886c3c9536e438fc393a3dc2763",
+				"dweb:/ipfs/QmQMNKDYzcKV1h3L3XBawtJJitdgtseZ6YTTnmn4UAphjW"
+			]
+		},
+		"ItemManager.sol": {
+			"keccak256": "0xcd972f15d3ee94b5da967c2a61b52f869305a29dfd280c824a1109048bf46b9c",
+			"urls": [
+				"bzz-raw://6a52b729233b0befcda5e25948fb52b6dcee3cf81827f303182e677a2a9abeae",
+				"dweb:/ipfs/QmPM28V2H65VVHiPZoxFXaLq5UBXApZyhbcvAenCZv4Lxm"
+			]
+		},
+		"Ownable.sol": {
+			"keccak256": "0x76303de70e86c0a72f7c9bcf39c10ffedd28e30bec04f44440f016cec87e2459",
+			"urls": [
+				"bzz-raw://c6d456976853f292c1d2df6c061340ce910302ff7d26100e7bc33ec197f0d688",
+				"dweb:/ipfs/QmV7qCAwoBPNtQouaNzw572Sb9q9vht5N21jzYpC5AqZaL"
+			]
+		}
+	},
+	"version": 1
+}
